@@ -35,3 +35,93 @@ h2{
 ul li{
     color: navy;
 }
+        :root {
+            color-scheme: light;
+            font-family: Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding-top: 76px;
+        }
+
+        .site-nav {
+            position: fixed;
+            inset: 0 0 auto;
+            z-index: 1000;
+            background: #260442;
+            box-shadow: 0 2px 12px rgb(0 0 0 / 18%);
+        }
+
+        .nav-inner {
+            width: min(1120px, 100%);
+            min-height: 76px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .brand {
+            color: #fff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 10px 12px;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: background-color 160ms ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            background: #593175;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding-top: 112px;
+            }
+
+            .nav-inner {
+                min-height: 112px;
+                flex-direction: column;
+                justify-content: center;
+                gap: 8px;
+                padding: 12px 16px;
+            }
+
+            .nav-links {
+                justify-content: center;
+                gap: 0;
+            }
+
+            .nav-links a {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+        }
