@@ -5,63 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team</title>
     <style>
-        .parent {
-            border: 10px solid;
-            border-width: 20px;
-            background-color: #2b2b53;
-            color: white;
+        .bparent {
+            border-radius: 1px;
+            margin-bottom: 20px;
+            background-image: url(../images/clp.jpg);
+        }
+        .parent1 {
+            border-radius: 2px;
+            margin-left: 147px;
+            margin-top: 18px;
+            width: 76%;
+            color: rgba(255, 255, 255, 0.274);
             display: grid;
             background-image: url(../images/clp.jpg);
         }
-        .h1 {
+        .box1 {
+            height: 25vh;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .ht {
+            font-size: 12px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .pp {
             margin-left: 10px;
+            margin-top: 10px;
+            font-weight: 100;
+            color: rgba(255, 255, 255, 0.726);
+            font-style: inherit;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            font-size: 35px;
         }
         .p1 {
             text-align: right;
-            margin-right: 10px;
+            margin-top: 60px;
+            margin-right: 20px;
+            color: #ffffff75;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            white-space: pre-line;
+            text-indent: 0;
+            padding-left: 0;
         }
-        .parent2 {
+        .parent {
+            margin-bottom: 19px;
+            width: 70%;
+            margin-left: 147px;
             display: grid;
-            grid-template-columns: 20% 20% 20% 20%;
-            padding: 50px;
+            border-radius: 2px;
+            color: #ffffff8c;
+            grid-template-columns: 25% 25% 25% 25%;
+            padding: 40px;
             grid-gap: 10px;
-            background-color: #2b2b53;
-            column-gap: 5px;
-            background-image: url(../images/clp.jpg);
+            background-image: url(../images/clp.jpg)
         }
         .box {
             background-image: url(images/images.jpg);
             border: 1px solid;
-            margin-left: 25px;
+            margin-left: 5px;
             border-radius: 5px;
+            font-family:sans-serif;
+            font-size:x-small;
+            width: 80%;
+            padding: 20px;
+            border-color: #042772;
         }
         .box2 {
             border: 1px solid;
             border-radius: 5px;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size: x-small;
+            width: 80%;
+            padding: 20px;
+            border-color: #042772;
         }
         .box3 {
             border: 1px solid;
+            border-color: #042772;
             border-radius: 5px;
+            font-family: sans-serif;
+            font-size: x-small;
+            margin-left: 25px;
+            padding: 20px;
+            width: 80%;
         }
         .box4 {
             border: 1px solid;
+            border-color: #042772;
             border-radius: 5px;
+            font-family: sans-serif;
+            font-size: x-small;
+            margin-left: 30px;
+            padding: 20px;
+            width: 70%;
         }
     </style>
 </head>
 <body>
-    <div class="parent">
+    <div class="bparent">
+    <div class="parent1">
+        <h1 class="ht">The team</h1>
         <div class="box1">
-            <h1 class="h1">The Minds behind <br> the Intellix</h1>
-            <p class="p1">A multidisciplinary team of strategists, <br> engineers and AI specialists</p>
+            <h2 class="pp">The minds <br> behind the Intellix</h2>
+            <div>
+            <p class="p1">A multidisciplinary team of strategies<br> engineers, and AI specialists</p>
         </div>
-        <div class="parent2">
-            <div class="box">Aaron Benjemin <br>Founder and CEO <img src="../images/img.jpg" width="100%" alt=""></div>
+        </div>
+        </div>
+        <div class="parent">
+            <div class="box">Aaron Benjemin <br>Founder & CEO <img src="../images/img.jpg" width="100%" alt=""></div>
             <div class="box2">Daniel Brooks <br>Chief Technology Officer <img src="../images/jol.jpg" width="100%" alt=""></div>
             <div class="box3">Sphia Turner <br>Head AI Strategy <img src="../images/kik.jpg" width="100%" alt=""></div>
             <div class="box4">Marcus Bernt <br> Laed System Architech <img src="../images/lik.jpg" width="100%" alt=""></div>
 
         </div>
     </div>
+</div>
 </body>
+<nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a class="brand" href="index.html">Tech Talent Center</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/courses.html">Courses</a></li>
+                <li><a href="pages/team.html">Team</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
 </html>
